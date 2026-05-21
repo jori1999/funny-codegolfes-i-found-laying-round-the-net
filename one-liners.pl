@@ -41,9 +41,10 @@ perl -e 'eval eval "\"".(("["^"\+").(("[")^")").("`"|")").("`"|".").("["^"/").("
 
 perl -E 'say grep/[^+-246\[-^aceghmprsy]/,map chr,041..126'
 
-
+#first 100 primes:
 seq 100 | perl -ne '$n=$_;print if 2==grep{$n%$_<1}1..$n'
 
+#checks if prime
 perl -e '$a=11;print "prime\n" if(1x$a)!~/^1?$|^(11+?)\1+$/;'
 
 perl -e '$r=25; $c=80;
