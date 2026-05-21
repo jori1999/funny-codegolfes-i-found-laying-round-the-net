@@ -67,4 +67,4 @@ $d0+15     *$xc)/16;$yc=($       d1+15*$yc)/                        16;$_*=
 1+$z for                         $xr,$yr;$dw                     *=-1 if rand
 ()<0.02;                          (++$i%110                      )||($z*=-1)}'
 
-perl -le'print map{pack c, (himBHs++?-1:5) + ord} split//, EBQI'
+perl -le'print map{pack c, ($-++?-1:5) + ord} split//, EBQI'
